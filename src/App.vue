@@ -1,26 +1,17 @@
 <template>
-  <HorizonFrame />
-  <SidebarControls />
+  <AppCanvas />
+  <AppSidebar />
 </template>
 
 <script>
-import Config from "./config.js";
-import SidebarControls from "./components/SidebarControls.vue";
-import HorizonFrame from "./components/HorizonFrame.vue";
-import Methods from "./app/methods.js";
-import Created from "./app/created.js";
-import Watch from "./app/watch.js";
-
+import AppSidebar from "./components/AppSidebar.vue";
+import AppCanvas from "./components/AppCanvas.vue";
 export default {
   name: "App",
-  data: Config,
   components: {
-    SidebarControls,
-    HorizonFrame,
+    AppCanvas,
+    AppSidebar,
   },
-  methods: Methods,
-  created: Created,
-  watch: Watch,
 };
 </script>
 

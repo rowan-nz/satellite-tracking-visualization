@@ -1,5 +1,6 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import "./registerServiceWorker";
+import "./services/registerServiceWorker.js";
+import FontAwesomeIcon from "./services/fontAwesomeIcons.js";
 
-createApp(App).mount("#app");
+createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");

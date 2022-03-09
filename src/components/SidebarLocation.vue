@@ -1,10 +1,10 @@
 <template>
-  <div id="SelectorItem">switch</div>
+  <div id="LocationControls">location controls</div>
 </template>
 
 <script>
 export default {
-  name: "SelectorItem",
+  name: "SidebarLocation",
   props: {
     msg: String,
   },
